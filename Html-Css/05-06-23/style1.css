@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        html {
+            color: #241E4E;
+            font-size: 20px;
+        }
+
+        .container {
+            background-color: rgb(174, 255, 216);
+            height: 100vh;
+            width: 70%;
+            font-size: 2rem;
+            margin: 0 auto;
+        }
+
+        #contenuto {
+            background-color: rgb(238, 229, 233);
+            color: red;
+            width: 80%;
+            height: 200px;
+            font-size: 15px;
+            margin: 2rem auto ;
+            
+            border: 2px solid red;
+            padding: 2rem;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .colore-blu, .container{
+            color: blue !important;
+        }
+
+        h1{
+            font-family: 'Lobster';
+        }

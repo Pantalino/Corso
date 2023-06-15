@@ -1,0 +1,60 @@
+<!-- Esercitazione
+
+Html e CSS: basi di CSS - Hilary Palmieri
+Creare una pagina e un foglio di stile separato ed includerlo nell’<head>.
+Nella pagina aggiungere:
+1. Div contenitore con classe “container” di colore RGB 174, 255, 216, altezza 100% del viewport height
+e larghezza 70% del body, centrato orizzontalmente nella pagina, grandezza font 2rem
+2. Inserire un h1 costituito da un Lorem Ipsum di 15 parole all’interno di un nel div con classe
+“container”
+3. All’interno di “container” un div con id “contenuto”, colore di sfondo RGB 238, 229, 233 e colore testo
+red, larghezza 80% del container, altezza 200px, centrato orizzontalmente e con spaziatura al
+margine superiore e inferiore di 2 rem, con grandezza font 15px
+4. Inserire un Lorem Ipsum di 300 parole all’interno del div contenuto
+5. Dare un bordo rosso continuo di 2 pixel al div contenuto
+6. Spaziare il testo contenuto nel div contenuto dai bordi di almeno 2rem
+7. Impostare colore del testo #241E4E per tutta la pagina e fare in modo che sovrascriva il colore
+rosso dato al div contenuto senza cambiare le dichiarazioni fatte prima (consiglio: creare una classe
+colore-blu)
+8. aumentare il font-size dell’elemento root a 20px
+9. cambiare il tipo di font dell’h1 in Lobster e del contenuto in Open Sans
+(importare da Google Fonts) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s,</h1>
+        <div id="contenuto" class="colore-blu">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+            of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+            professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,
+            from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+            undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+            (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
+            ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+            comes from a line in section 1.10.32.
+
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
+            1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
+            original form, accompanied by English versions from the 1914 translation by H. Rackham.It is a long
+            established fact that a reader will be distracted by the readable content of a page when looking at its
+            layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+            opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem
+            ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years,
+            sometimes by accident, sometimes on purpose (injected humour and the like).</div>
+    </div>
+</body>
+
+</html>

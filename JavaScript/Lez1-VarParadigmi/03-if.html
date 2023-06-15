@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        if(1>0){
+            console.log("il numero 1 è maggiore di 0");
+        }
+
+        //esempio
+        let etaUser = 15;
+
+        if(etaUser<18){
+            console.log("MI dispiace non puoi accedre");
+        }else{
+            console.log("Benvenuto");
+        }
+
+        //esempio
+        let coloreSemaforo = "v";
+
+        if (coloreSemaforo === "verde") {
+            console.log("puoi passare");
+        } else if(coloreSemaforo === "giallo"){
+            console.log("Attento, il semaforo sta per scattare");
+        }else if(coloreSemaforo === "rosso"){
+            console.log("Stop");
+        }else{
+            console.log("Semaforo fuori uso");
+        }
+
+        var numero1 = 10;
+        var numero2 = "10";
+
+        let confronto1 = (numero1 == numero2);
+        let confronto2 = (numero1 === numero2);
+
+        console.log(confronto1, confronto2);
+
+        //&& AND logico
+        //|| OR logico
+
+        let skill = 8;
+        let punteggio = 25;
+
+        console.log("GIOCO IN HARD MODE");
+        if (skill > 8 && punteggio > 20) {
+            console.log("Bravo hai superato il livello");
+        }else if(skill > 8 && punteggio <= 20){
+            console.log("Devi migliorare i punteggi");
+        }else if(skill <= 8 && punteggio > 20){
+            console.log("Devi migliorare le skills");
+        }else{
+            console.log("Fai schifo a questo gioco");
+        }
+
+        console.log("GIOCO IN EASY MODE");
+        if (skill > 8 || punteggio > 20) {
+            console.log("Bravo hai superato il livello");
+            if(skill <= 8 && punteggio > 20){
+                console.log("Però devi migliorare le skills");
+            }else{
+                console.log("Però devi migliorare il punteggio");
+            }
+        }else {
+            console.log("Fai schifo a questo gioco");
+        }
+
+        console.log();
+        
+
+    </script>
+</body>
+</html>

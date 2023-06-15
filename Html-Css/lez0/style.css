@@ -1,0 +1,50 @@
+
+/* Regole:
+- vietato usare html: solo CSS
+- le porprietà che ci servono sono background-color per lo sfondo, color per cambiare il colore del testo e font-size per la dimensione del testo */
+
+/* Importare questo foglio di stile nella pagina html */
+
+/* Dare al <body> colore di sfondo #bdc3c7*/
+body{
+    background-color: #bdc3c7;
+}
+/* Rendere <h1> di colore #9b59b6*/
+h1{
+    color: #9b59b6;
+}
+
+/* Rendere tutti gli <h2> orange */
+h2{
+    color: orange;
+}
+
+/* Rendere tutti gli elementi <li> blue (scegli il tuo colore esadecimale)*/ 
+li{
+    color: blue rgba(red, green, rgba(89, 89, 167, 0.514), alpha);
+}
+/*Cambiare il colore di tutti i paragrafi in yellow*/
+p{
+    color: yellow;
+}
+/* Dare a tutto ciò che ha la classe 'ciao' uno sfondo white */
+.ciao{
+    background-color: white;
+}
+/* dare all'elementto con l'id 'speciale' uno sfondo blue */
+#speciale{
+    color: blue;
+}
+/* Rendere i caratteri di tutti i <p>'s che si trovano all'interno del div con classe terzo-div 25px (font-size: 25px)*/
+.terzo-div p{
+    font-size: 25px;
+}
+/* Dare ai <p> che si trovano dentro il div con classe terzo-div colore di sfondo pink */
+.terzo-div p{
+    background-color: pink;
+}
+/* Rendere il testo del secondo <p> che si trova denteo il <div> con classe terzo-div red */
+.terzo-div p+p{
+    color: red;
+}
+

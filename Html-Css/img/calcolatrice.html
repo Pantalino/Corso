@@ -1,0 +1,141 @@
+<html>
+
+<head>
+
+    <title>Calc.byDario</title>
+    <script>
+
+        function dig(n) {
+            document.form.display.value = document.form.display.value + n
+        }
+
+        function clean() {
+            let a = document.form.display.value;
+            document.form.display.value = a.substring(0, a.length - 1);
+
+        }
+
+        function allclean() {
+            document.form.display.value = '';
+        }
+
+        function somma() {
+            let r = document.form.display.value
+            if (r) {
+                document.form.display.value = eval(r)
+            }
+        }
+    </script>
+
+    <style>
+
+     
+        .marca {
+            color: yellowgreen;
+            text-align: center;
+        }
+
+        .calc {
+            position: absolute;
+            left: 40%;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 3cm;
+            justify-content: center;
+            background-color: rgb(0, 0, 0);
+            border-radius: 1cm;
+
+        }
+
+        #display {
+
+            height: 50px;
+            width: 250px;
+            font-size: x-large;
+            text-align: right;
+            border-radius: 250px;
+        }
+
+        .button {
+
+            height: 60px;
+            width: 60px;
+            font-size: x-large;
+            cursor: pointer;
+            background-color: lightgray;
+            border-radius: 60px;
+            color: rgb(6, 0, 0);
+            border-color: red;
+            opacity: 0.8;
+            
+        }
+
+        .button2 {
+
+            height: 60px;
+            width: 124px;
+            font-size: x-large;
+            cursor: pointer;
+            border-radius: 60px;
+            background-color: orangered;
+            opacity: 0.8;
+        }
+
+        .button3{
+            height: 60px;
+            width: 60px;
+            font-size: x-large;
+            cursor: pointer;
+            background-color: yellow;
+            border-radius: 60px;
+            color: rgb(6, 0, 0);
+            border-color: red;
+            opacity: 0.8;
+
+        }
+
+        .button:hover{
+            opacity: 1.0;
+        }
+
+        .button2{
+            opacity: 1.0;
+        }
+
+        .button3:hover{
+            opacity: 1.0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="calc"><br>
+        <h4 class="marca">CALC.by_Dario</h4>
+        <form name="form"><input type="text" name="display" id="display" placeholder="0"><br><br></form>
+
+        <div >
+           
+            <input class="button" type="button" value="7" onclick="dig(7)">
+            <input class="button" type="button" value="8" onclick="dig(8)">
+            <input class="button" type="button" value="9" onclick="dig(9)">
+            <input class="button3" type="button" value="+" onclick="dig('+')"><br>
+            <input class="button" type="button" value="4" onclick="dig(4)">
+            <input class="button" type="button" value="5" onclick="dig(5)">
+            <input class="button" type="button" value="6" onclick="dig(6)">
+            <input class="button3" type="button" value="-" onclick="dig('-')"><br>
+            <input class="button" type="button" value="1" onclick="dig(1)">
+            <input class="button" type="button" value="2" onclick="dig(2)">
+            <input class="button" type="button" value="3" onclick="dig(3)">
+            <input class="button3" type="button" value="X" onclick="dig('*')"><br>
+            <input class="button" type="button" value="C" onclick="clean('')">
+            <input class="button" type="button" value="0" onclick="dig(0)">
+            <input class="button" type="button" value="," onclick="dig('.')">
+            <input class="button3" type="button" value=":" onclick="dig('/')"><br><br>
+            <input class="button2" type="button" value="AC" onclick="allclean()">
+            <input class="button2" type="button" value="=" onclick="somma()"><br><br><br>
+        </div>
+    </div>
+</body>
+
+</html>

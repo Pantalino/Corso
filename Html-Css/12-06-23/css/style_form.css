@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body {
+    /* background-color: rgb(141, 209, 39);
+
+    background: radial-gradient(circle, rgba(200, 255, 47, 0.548), rgba(92, 0, 0, 0.753)); */
+background-image: url(/img/universe.jpg);
+    background-size: cover;
+    margin: 0 25px 0 25px;
+    text-align: center;
+}
+
+.main {
+    
+
+}
+
+.titolo {
+    font-size: xx-large;
+    text-align: center;
+    font-family: fantasy;
+    color: rgba(92, 0, 0, 0.753);
+
+}
+
+.container {
+    background-color: rgba(240, 248, 255, 0.575);
+    width: 20rem;
+    font-size: 7rem;
+    margin: 0 auto;
+    
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border: 5px solid gray;
+    border-radius: 10px;
+}
+
+.form {
+    margin: 10px;
+    padding: auto;
+}
+
+.txt {
+    height: 25px;
+    border-radius: 10px;
+    border: 3px solid gray;
+}
+
+.mess {
+    border: 3px solid gray;
+    border-radius: 10px;
+    resize: none;
+    
+
+
+}
+
+.txt, .mess{
+    width: calc(100% - 1rem );
+}
+
+.btn {
+
+    width: 80px;
+    height: 30px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    /* margin-left: 30%; */
+    display: block;
+    margin: 5px auto;
+    background-color: rgba(236, 4, 4, 0.801);
+
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+    
+}
+
+select{
+    height: 25px;
+    width: 93%;
+    border-radius: 10px;
+    border: 3px solid gray;
+}
+
+/* label{
+display: block;
+margin-bottom: 10PX;
+
+} */

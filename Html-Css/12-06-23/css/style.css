@@ -1,0 +1,60 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {padding: 30px
+             30px
+             30px       
+             30px;}
+
+.main {
+    background-image: url(/img/universe.jpg);
+    background-size: cover;
+    margin: 0 25px 0 25px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    min-height: 100vh;
+    
+}
+
+
+.wall {
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+}
+
+li {
+    display: inline;
+    margin: 10px;
+    font-size: 20px;
+    margin-top: 50%;
+
+
+}
+
+nav {
+    text-align: right;
+    
+}
+
+a:link{
+    text-decoration: none;
+}
+.serv {
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+    text-align: left;
+    top: 860px;
+    left: auto;
+    position: relative;
+
+}

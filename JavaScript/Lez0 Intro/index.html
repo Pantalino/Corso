@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Prima pagina con JS</h1>
+    <p>Pagina del corso tecniche di programmazione</p>
+    <p>Docente: Dario</p>
+
+    <p id="numStud"></p>
+
+
+    <!-- collegamento allo script -->
+    <script>
+        let a = "Dario";
+        var b = "Mennillo";
+
+        let eta = 34;
+
+        console.log("Ciao" + " " + a + " " + b + ".Ho " + eta + " anni");
+
+        console.log(typeof a);
+        console.log(typeof eta);
+
+        let anno = 2023;
+        let pi = 3.14;
+
+        console.log(typeof anno);
+        console.log(typeof pi);
+
+        let somma = anno + pi;
+        console.log(somma);
+
+// somma tra tipi di dato diversi
+        let somma2 = a + pi + anno;
+        console.log(somma2);
+        console.log(typeof somma2);
+
+        let somma3 = pi + anno + b;
+        console.log(somma3);
+
+        let num1 = "10";
+        let num2 = "20";
+        //let somma4 = num1+num2;
+
+        //casto le stringhe in numero
+        let somma4 = Number(num1) + Number(num2);
+        console.log(somma4);
+
+    </script>
+
+    <!-- Script su file esterno -->
+    <script src="./js/script0.js"></script>
+
+    
+</body>
+</html>

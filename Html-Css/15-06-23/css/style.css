@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logoNav {
+    width: 7%;
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    /* margin-top: 0px; */
+}
+
+li {
+    display: inline;
+    margin: 3px;
+}
+
+.conteiner {
+    
+    /* background-color: #ccc; */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around ;
+}
+.vogel {
+    background-color: rgba(218, 219, 231, 0.89);
+  
+    
+}
+.box {
+   
+    width: 50%;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    float: left;
+    padding: 30px;
+    flex-direction: column;
+ 
+
+}
+
+.box2 {
+    height: auto;
+    width: 200px;
+    background-color: rgb(160, 107, 221);
+    border: 3px solid black;
+    border-radius: 5px;
+    
+    
+    
+}
+
+
+footer{
+   
+    
+}
+
+.fDiv{
+    height: auto;
+    width: 200px;
+    background-color:;
+   
+    border-radius: 5px;
+    display: inline;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.vogel2{
+    width: 10%;
+}
+
+footer{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around ;
+}
+
+.end{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around ;
+}
