@@ -7,13 +7,79 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>Gioco del Lotto</h1>
-    <input type="number" >
-    <button id="btn">Genera numeri</button>
-    <h2>Numeri estratti</h2>
-    <p id="numEstratti"></p>
+    <!DOCTYPE html>
+<html lang="en">
 
-    <script src="./js/script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .form {
+        background-color: khaki;
+        border: 5px black solid;
+        margin: 0 200px;
+        border-radius: 50px;
+    }
+
+    h1,
+    h3,
+    div {
+        text-align: center;
+    }
+
+    div{
+        background-color: whitesmoke;
+        margin: 10px 130px;
+        border: 1px black double;
+        border-radius: 10px;
+       
+    }
+
+    input {
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        margin-top: 20px;
+        height: 20px;
+        border: 3px black solid;
+        text-align: right;
+        border-radius: 10px;
+    }
+
+    button {
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        height: 30px;
+        width: 100px;
+        border-radius: 10px;
+    }
+
+    button:hover {
+        background-color: slateblue;
+    }
+</style>
+
+<body>
+
+
+    <div class="form">
+        <h1>Gioco del Lotto</h1>
+        <h3>Quanti numeri vuoi estrarre?</h3>
+        <input type="number" id="serie-numeri" min="1" max="10" >
+        <button onclick="estrarreNumeri()">Estrai Numeri</button>
+        <div id="numeri-estratti"></div>
+        <script src="./js/script.js"></script>
+    </div>
+
 </body>
+
 </html>
+
+ 

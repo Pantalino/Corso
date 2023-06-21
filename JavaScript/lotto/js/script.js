@@ -1,14 +1,28 @@
-let btn = document.getElementById("btn");
 
+function estrarreNumeri() {
+    let serieNumeri = document.getElementById("serie-numeri").value;
+    let numeriEstratti = [];
 
-function generaNumeri(){
-    let numeri = document.getElementById("numEstratti").value;
-    for(let i = 1; i < numeri; i++){
-         let random = Math.ceil(Math.random()*90)
-         console.log(random);
-    } 
-   
-}
+    for (let i = 0; i < serieNumeri; i++) {
+      let serie = [];
 
-btn.addEventListener("click", generaNumeri);
-generaNumeri();
+      while (serie.length < 5) {
+        let numeroCasuale = Math.ceil(Math.random() * 90);
+
+        if (!serie.includes(numeroCasuale)) {
+          serie.push(numeroCasuale);
+        }
+      }
+
+      numeriEstratti.push(serie);
+    }
+
+    let numeriEstrattiElement = document.getElementById("numeri-estratti");
+    numeriEstrattiElement.innerHTML = "";
+
+    numeriEstratti.forEach(function(serie) {
+      let serieElement = document.createElement("p");
+      serieElement.innerHTML = "Numeri estratti: " + serie.join(" - ");
+      numeriEstrattiElement.appendChild(serieElement);
+    });
+  }
