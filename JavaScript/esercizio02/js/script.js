@@ -1,3 +1,5 @@
+
+
 function Item(todo, data) {
 
     this.todo = todo;
@@ -28,15 +30,17 @@ function registraItem() {
 }
 
 function stampa() {
-    demo.innerHTML = "";
+    listaItem.innerHTML = "";
     lista.forEach(item => {
         demo.innerHTML += "<li>" + item.info() + "</li>";
     });
 }
 
 let lista = [];
+let todoItem = document.getElementById("todoItem");
+let data = document.getElementById("data");
 let btnAgg = document.getElementById("btnAgg");
-let demo = document.getElementById("demo");
+let listaItem = document.getElementById("listaItem");
 
 
 btnAgg.addEventListener("click", registraItem);
