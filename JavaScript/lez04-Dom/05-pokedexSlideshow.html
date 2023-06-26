@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="singoloPokemon">
+        <h2 id="nomePokemon"></h2>
+        <img src="" alt="" id="imgpokemon">
+        <p id="descrizionePokemon"></p>
+    </div>
+
+    <button id="btnInd">Indietro</button>
+    <button id="btnAva">Avanti</button>
+
+    <script>
+        // servono le funzioni
+        //problema caricamento pagina
+        let pokemon = [
+            {
+                nome: "pikachu",
+                img: "./img/picachu",
+                descrizione: "Il primo pokemon trovato sotto un ponte"
+            },
+            {
+                nome: "charmander",
+                img: "./img/charmander",
+                descrizione: "Il secondo pokemon trovato sotto un auto"
+            },
+            {
+                nome: "bulbasaur",
+                img: "./img/bulbasaur",
+                descrizione: "Il terzo pokemon disperso "
+            },
+            {
+                nome: "squirtle",
+                img: "./img/squirtle",
+                descrizione: "Il quarto pokemon trovato morto"
+            },
+        ]
+        let nomePokemon = document.querySelector("#nomePokemon");
+        let imgPokemon = document.querySelector("#imgPokemon");
+        let descrizionePokemon = document.querySelector("#descrizionePokemon");☻
+        let btnAva = document.querySelector("#btnAva");
+        let btnInd = document.querySelector("#btnInd");
+
+        let posizione = 0;
+
+
+        function mostra(i) {
+
+            nomePokemon.textContent = pokemon[i].nome;
+            imgPokemon.setAttribute("src", pokemon[i].img )
+            descrizionePokemon.textContent = pokemon[i].descrizione;
+
+        }
+        mostra(posizione);
+
+        btnAva.addEventListener("click", function () {
+            posizione++
+
+            console.log(posizione);
+            mostra(posizione)
+
+            if (posizione == 0)
+                posizione = 4;
+        })
+
+
+        btnInd.addEventListener("click", function () {
+            posizione--;
+
+            if (posizione == -1) {
+                posizione = 3;
+            }
+            mostra(posizione)
+
+        })
+
+    </script>
+</body>
+
+</html>
