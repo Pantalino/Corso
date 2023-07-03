@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Pokedx</h1>
+    <ul id="listaPoke"></ul>
+    <div id="cardPoke"></div>
+
+    <script>
+        let listaPokemon = [
+            {
+                nome: "Pikachu",
+                img: "./img/pikachu.jpg",
+                tipo: "elettrico",
+                descrizione: "se lo tocchi ci resti secco"
+            },
+            {
+                nome: "charmendar",
+                img: "./img/charmander.jpg",
+                tipo: "fuoco",
+                descrizione: "se lo tocchi ti scotti"
+            },
+            {
+                nome: "Bulbasaur",
+                img: "./img/bulbasaur.jpg",
+                tipo: "erba",
+                descrizione: "se lo tocchi bla bla bla"
+            }
+        ];
+
+        let listaPoke = document.querySelector("#listaPoke");
+            let cardPoke = document.querySelector("#cardPoke");
+        
+         
+        function mostraLista(pokemons){
+
+            pokemons.forEach(pokemon => {
+                let li = document.createElement("li");
+                li.textContent = pokemon.nome;
+
+                let pulsMostra = document.createElement("button");
+                pulsMostra.textContent = "Mostra Card";
+
+                pulsMostra.addEventListener("click", function(){
+                    mostraSingolaCard(pokemon);
+
+
+
+                });
+
+                li.appendChild(pulsMostra);
+                listaPoke.appendChild(li);
+            });
+        }
+
+        function mostraSingolaCard(pokemon){
+            console.log(pokemon);
+
+            let card = `
+                <h2>${pokemon.nome}</h2>
+                <img id="imgPoke" scr="${pokemon.img}">
+                <p>${pokemon.tipo}</p>
+                <p>${pokemon.descrizione}</p>
+            `;
+
+            cardPoke.innerHTML = card;
+        }
+
+        // let imgPoke = document.querySelector("#imgPoke");
+
+        // imgPoke.addEventListener("click", function(){
+
+        // })
+
+        let btnChiudi = document.querySelector("#btnChiudi");
+
+        btnChiudi.addEventListener("click", function(){
+            cardPoke.innerHTML= "";
+        })
+
+        mostraLista(listaPokemon);
+
+
+    </script>
+</body>
+</html>
