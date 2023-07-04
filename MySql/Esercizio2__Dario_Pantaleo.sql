@@ -44,8 +44,9 @@ il cui titolo comincia per 'il' o 'la' e ordinate per prezzo
 select titolo, pagine, prezzo, nome
 from libro, editore
 where editore_id = editore.id 
-and titolo regexp'^il'
-or titolo regexp '^la'
+and (titolo like 'il%' or titolo like 'la%')
+-- and titolo regexp'^il'
+-- or titolo regexp '^la'
 order by prezzo;
 
 /*
@@ -54,7 +55,7 @@ seleziona il titolo, le pagine, il prezzo, il nome e il cognome dell'autore
 la cui nazionalità è 'en' o 'it' e ordinate per nazionalita
 */
 
-select titolo, pagine, prezzo, nome, cognome
+select titolo, pagine, prezzo, nome, cognome, nazionalita
 from libro, autore, autore_libro
 where autore_id = autore.id 
 and libro.id = libro_id

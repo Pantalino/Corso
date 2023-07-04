@@ -50,7 +50,7 @@ public class Persona {
     
     //il costruttore è un metodo che non ritorna niente, neanche void
     //ha lo stesso nome della classe
-    Persona(){};//costruttore di default derivato della classe Object,
+    public Persona(){};//costruttore di default derivato della classe Object,
                 //che è la classe che derivano tutte le altre classi//costruttore di default derivato della classe Object,
                 //che è la classe che derivano tutte le altre classi
    
@@ -61,14 +61,14 @@ public class Persona {
      * @param cognome cognome della persona
      * @param eta età della persona
      */
-    Persona(String nome, String cognome, int eta) {
+    public Persona(String nome, String cognome, int eta) {
         this.nome = nome;
         this.cognome = cognome;
         this.eta = eta;
       
     }//this si riferisce alla classe
     
-    Persona(String nome, String cognome){
+    public Persona(String nome, String cognome){
         this.nome = nome;
         this.cognome = cognome;
     }
