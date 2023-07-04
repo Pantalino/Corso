@@ -209,12 +209,4 @@ WHEN prezzo > 10 THEN 'caro'
 END valore
 FROM catalogo.libro;
 
-SELECT cognome, data_nascita `Data di nascita`,
-CASE WHEN year(data_nascita) <= '1980' THEN 'X'
-WHEN year(data_nascita) > '1980'
-AND year(data_nascita) < '1995' THEN 'millenials'
-WHEN year(data_nascita) >= '1995' THEN 'Z'
-WHEN year(data_nascita) IS NULL THEN 'Manca data nascita'
-END Generazione
-FROM studenti
-ORDER BY Generazione;
+
