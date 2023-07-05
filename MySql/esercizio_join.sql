@@ -135,8 +135,10 @@ and libro_id = libro.id
 order by titolo;
 
 select titolo, pagine, prezzo, nome, cognome
-from libro
-join libro_
+from autore_libro
+join autore on autore_libro = autore.id
+join libro on libro_id = libro.id
+order by titolo;
 
 /*
 8)
@@ -153,6 +155,13 @@ and libro_id = libro.id
 and prezzo >= '10'
 order by prezzo desc;
 
+select titolo, pagine, prezzo, nome, cognome
+from autore_libro
+join autore on autore_id = autore.id
+join libro on libro_id = libro.id
+where prezzo >='10'
+order by prezzo desc;
+
 /*
 9) selezionate solo i libri editi da mondadori 
 (proiettate titolo e prezzo),
@@ -164,6 +173,13 @@ from libro L, editore E
 where editore_id = E.id 
 and E.nome = 'mondadori'
 order by prezzo desc;
+
+select l.titolo, l.prezzo
+from libro l
+join editore e on editore_id = e.id
+where e.nome = 'mondadori'
+order by prezzo desc;
+
 
 /*
 10)
@@ -178,3 +194,5 @@ where Autore_id = A.id
 and L.id = AL.libro_id
 and nazionalita = 'en'
 order by A.nome, A.cognome;
+
+select l.titolo
