@@ -1,9 +1,8 @@
-
 <!doctype html>
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>Ecommerce</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,18 +15,46 @@
 
 <body>
   <header>
-    <!-- place navbar here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0">
+            <input id="search" class="form-control me-sm-2" type="text" placeholder="Search">
+           
+          </form>
+          <button id="btnSearch" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </div>
+      </div>
+    </nav>
   </header>
   <main>
 
 <div class="container">
 
-    <h1>Ecommerce TPD - Vendiamo solidissime realtà (Angel)</h1>
+    <h1>Ecommerce TPD - Vendiamo solidissime realtà </h1>
     <p>Seleziona una categoria:</p>
 
     <div class="mb-3 col-4">
         <label for="" class="form-label">Prodotti</label>
-        <select class="form-select form-select-lg" name="" id="selectCategorie">
+        <select class="form-select form-select-lg" id="selectCategorie">
             <option selected disabled>Seleziona una categoria</option>
         </select>
     </div>

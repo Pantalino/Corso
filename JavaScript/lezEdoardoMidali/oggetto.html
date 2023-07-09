@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        const chiave = 'genere';
+
+        let persona = {
+            nome: 'luca',
+            cognome: 'rossi',
+            eta: 39,
+            genere: 'maschio',
+            hobby: ['pippare','scopare'],
+            indirizzo: {
+                via: 'roma',
+                citta: 'milano',
+                provoncia:'mi',
+            },
+            saluta: function(){
+                console.log(`ciao sono : ${this.nome}`);
+            }
+        }
+
+        // console.log(persona.nome);
+        // console.log(persona.hobby[0]);
+        // console.log(persona.indirizzo.citta);
+
+        persona.saluta();
+
+        // console.log(persona['nome']);
+        // console.log(persona['hobby'][1]);
+
+        // console.log(persona[chiave]);
+    </script>
+</body>
+</html>

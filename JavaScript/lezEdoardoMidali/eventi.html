@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+
+        <label for="fname">Nome:</label>
+        <input type="text" id="fname">
+        <label for="lname">Cognome:</label>
+        <input type="text" id="lname">
+        <button id="submit" type="submit">Invia</button>
+        <p></p>
+
+    </form>
+
+    <script>
+        let form = document.querySelector('form');
+        let nome = document.querySelector('#fname');
+        let cognoome = document.querySelector('#lname');
+        let paragrafo = document.querySelector('p');
+
+        form.onsubmit = function(e) {
+            if (nome.value == '' || cognome.value == '') {
+                e.preventDefault();
+                paragrafo.textContent = 'completa i campi';
+            }
+        }
+
+
+        // nome.addEventListener('focus', (e)=>{
+        //     console.log(e.target);
+        // })
+
+        // nome.onfocus = function (){
+        //     console.log('sono im focus');
+        // }
+
+        
+
+    </script>
+</body>
+
+</html>

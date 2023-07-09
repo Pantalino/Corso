@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="text">
+    <button>click</button>
+    <script>
+        let nome = 'Dario';
+        let nome2 = 'Marco';
+        let numero = 16;
+        let numero2 = 22;
+
+        if(nome == 'Dario'){
+            console.log('ciao dario');
+        }else{
+            console.log('ciao anonimo');
+        }
+        if(nome2 == 'Dario'){
+            console.log('ciao dario');
+        }else if( nome2 == "Marco"){
+            console.log('ciao marco');
+        }else{
+            console.log('ciao anonimo');
+
+        }
+
+        if(numero > 20){
+            console.log('ok');
+        }else{
+            console.log('non va bene');
+        }
+        
+        console.log('************************************');
+
+        if(numero < 20){
+            if(numero%2==0)
+            console.log('numero pari');
+        }else{
+            console.log('numero dispari');
+        }
+        
+        if(numero2 < 20 || numero2%2==0){
+            
+            console.log('si');
+        }else{
+            console.log('no');
+        }
+
+        if(!(nome == 'Luca')){
+            console.log('ok');
+        }else{
+            console.log('no');
+
+        }
+        console.log('//////////////////////////////////////////');
+
+        let txt = document.querySelector('input');
+        let btn = document.querySelector('button');
+
+        switch (txt) {
+            case txt:
+                btn.addEventListener('click', ()=>{
+                    alert('ciao ' + txt.value)
+                })
+               
+                
+                break;
+        
+            default:
+            btn.addEventListener('click', ()=>{
+                    alert('inserisci nome')
+                })
+                break;
+        }
+        
+
+        
+    </script>
+</body>
+</html>
