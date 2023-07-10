@@ -7,6 +7,14 @@
       "codice_fiscale": "ppdd",
       "titolo": "admin",
       "id": 1
+    },
+    {
+      "nome": "Mario",
+      "cognome": "Rossi",
+      "email": "m.rossi@gmail.com",
+      "codice_fiscale": "mmrr",
+      "titolo": "base",
+      "id": 2
     }
   ]
 }
