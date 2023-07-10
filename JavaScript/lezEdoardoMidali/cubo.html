@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        button{
+            height: 2rem;
+            width: 5rem;
+            margin: 2rem;
+          
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <input type="text" name="numero"><br>
+    <button>calcola cubo</button>
+    <button id="btn2">calcola quadrato</button>
+ 
+    <h1>-</h1>
+
+    <script>
+        let button = document.querySelector('button');
+        let button2 = document.querySelector('#btn2');
+        let title = document.querySelector('h1');
+        let title2 = document.querySelector('h1');
+        let numero = document.querySelector('input');
+
+        function cubo(number) {
+            let result = number * number * number;
+            console.log(result);
+            return result;
+        }
+        function quadrato(number) {
+            let result = number * number;
+            console.log(result);
+            return result;
+        }
+        
+
+        button.addEventListener('click', () => {
+            title.innerHTML = cubo(numero.value);
+        });
+        button.addEventListener('click', () => {
+            title.innerHTML = quadrato(numero.value);
+        });
+    </script>
+</body>
+
+</html>

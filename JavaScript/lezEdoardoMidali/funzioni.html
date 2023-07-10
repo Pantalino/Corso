@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Sauta</button>
+
+    <script>
+        let nome = 'luca'
+
+        const btn = document.querySelector('button');
+
+        btn.onclick = function () {
+            alert('ciao');
+        }
+
+        function ciao(){;
+            let cognome = 'rossi'
+            console.log('ciao' , cognome);
+        }
+
+        function hello(name){
+            console.log('hello ', name);
+        }
+        
+
+
+        // console.log(nome);
+        // console.log(cognome);
+
+        hello('dario');
+
+
+
+        function generaTabella(){
+            generaHeader();
+            generaRighe();
+            generaFooter();
+
+            console.log('tabella generata');
+        }
+
+        function generaHeader(){
+            console.log('hedear generato');
+        };
+        function generaRighe(){
+            console.log('righe generae');
+        };
+        function generaFooter(){
+            console.log('footer generato');
+        };
+
+        generaTabella();
+    </script>
+
+    
+</body>
+</html>

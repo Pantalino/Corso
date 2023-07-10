@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let citta = 'Milano, Torino, Roma, Venezia, Napoli';
+        let split = citta.split(',');
+        let data = ['Milano', 'Torino', 'Roma', 'Venezia', 'Napoli'];
+        let join = data.join(',');
+
+        console.log(data);
+        console.log(data[1]);
+        console.log(data.length);
+        console.log(data[data.length-1]);
+
+        for(let i=0; i<data.length; i++){
+            console.log(data[i]);
+        }
+
+        console.log('//////////////////////////////////////////////');
+        console.log(split);
+        console.log('//////////////////////////////////////////////');
+        console.log(join);
+        console.log('//////////////////////////////////////////////');
+        data.push('Palermo');
+        console.log('//////////////////////////////////////////////');
+        console.log(data);
+        console.log('//////////////////////////////////////////////');
+        data.pop();
+        console.log(data);
+        console.log('//////////////////////////////////////////////');
+        data.unshift('Firenze');//aggiunge al primo elemento
+        console.log(data);
+        console.log('//////////////////////////////////////////////');
+        data.shift();//elimina il primo elemento
+        console.log(data);
+
+
+    </script>
+</body>
+</html>

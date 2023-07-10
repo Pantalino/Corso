@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button{
+            height: 50px;
+            width: 120px;
+            padding: 5px;
+            background-color: blue;
+            color: whitesmoke;
+            border-radius: 20%;
+            display: block;
+            margin-top: 30px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    
+    <input type="text" name="nome">
+    <button>saluta</button>
+    <h1></h1>
+
+    <script>
+
+        let btn = document.querySelector('button');
+        let title = document.querySelector('h1');
+        let nome = document.querySelector('input');
+
+   
+        function saluta(name = 'Dario') {
+            title.innerHTML = `Ciao  ${name}`
+        }
+
+        btn.addEventListener('click', ()=>{
+            saluta(nome.value);
+        })
+   
+    </script>
+</body>
+</html>
