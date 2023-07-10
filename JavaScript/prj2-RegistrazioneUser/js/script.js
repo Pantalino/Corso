@@ -1,15 +1,11 @@
 const URL = "http://localhost:3000/users"
-
-
 let btn = document.querySelector('#btn')
 let registraUsers = document.querySelector('#registraUsers')
 
 fetch(URL)
     .then(data => { return data.json() })
     .then(response => {
-        console.log(response);
-
-        
+        console.log(response);      
     })
 
 function caricaUsers() {
@@ -30,9 +26,12 @@ function caricaUsers() {
     fetch(URL,{
         method:"POST",
         headers: {"Content-type":"application/json"},
-        body: JSON.stringify(response.statusCode, "Registrazione andata con successo")
+        body: JSON.stringify(nuovoUser)
     })
-
+    .then(data =>{return data.json()})
+    .then(response =>{
+        console.log(response.statusCode, "Registrazione andata con successo");
+    })
 }
 
-form.addEventListener('submit', caricaUsers);
+registraUsers.addEventListener('submit', caricaUsers);

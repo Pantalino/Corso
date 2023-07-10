@@ -1,7 +1,12 @@
 {
   "users": [
-   
+    {
+      "nome": "Dario",
+      "cognome": "Pantaleo",
+      "email": "dario_pantaleo@outlook.it",
+      "codice_fiscale": "ppdd",
+      "titolo": "admin",
+      "id": 1
+    }
   ]
-
-
 }
