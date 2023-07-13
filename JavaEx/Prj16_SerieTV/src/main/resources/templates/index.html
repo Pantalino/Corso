@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+img{
+width: 200px;
+height: 300px;
+margin: 5px;
+border: 2.5px solid black;
+border-radius: 7%;
+}
+
+
+</style>
+</head>
+<body>
+
+  <div id="immagini"></div>
+
+
+<script>
+
+const URL="api/serie"
+fetch(URL)
+	.then(response => response.json())
+	.then(listaSerie => {
+		for(const serie of listaSerie){
+			const IMG = document.createElement('img');
+			IMG.src = serie.locandina;
+			document.querySelector('#immagini').append(IMG);
+		}
+	})
+
+
+</script>
+</body>
+</html>
